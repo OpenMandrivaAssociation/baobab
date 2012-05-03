@@ -38,6 +38,13 @@ a full graphical tree-map window for each selected folder.
 
 %find_lang %{name} --with-gnome
 
+%define langs	C cs da de el en_GB es eu fi gl hu it oc pl pt_BR ru sl sv uk zh_CN zh_HK zh_TW
+#for l in ca de el en_GB es eu fr gl oc ru sl sr sr@latin sv zh_CN; do
+for l in %{langs}
+	echo "%%dir %%{_datadir}/help/$l"
+	echo "%%lang($l) %%{_datadir}/help/$l/%%{name}"
+done >> %{name}.lang
+
 %files -f %{name}.lang
 %doc README NEWS AUTHORS TODO ChangeLog
 %{_bindir}/baobab
