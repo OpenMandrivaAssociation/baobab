@@ -36,7 +36,7 @@ a full graphical tree-map window for each selected folder.
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help
+%find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc README NEWS AUTHORS TODO ChangeLog
