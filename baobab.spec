@@ -1,9 +1,9 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
+Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
 Version:	3.4.1
-Release:	%mkrel 1
-Summary:	Disk Usage Analyzer (aka Baobab)
+Release:	1
 License:	GPLv2+
 Group:		File tools
 Url:		http://live.gnome.org/GnomeUtils/Baobab
@@ -34,7 +34,6 @@ a full graphical tree-map window for each selected folder.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %{name} --with-gnome --with-help
@@ -47,6 +46,4 @@ rm -rf %{buildroot}
 %{_datadir}/applications/baobab.desktop
 %{_datadir}/icons/hicolor/*/apps/baobab.png
 %{_mandir}/man1/baobab.1.*
-
-
 
