@@ -38,7 +38,7 @@ a full graphical tree-map window for each selected folder.
 
 %find_lang %{name} --with-gnome
 
-for l in C cs da de el en_GB es eu fi gl hu it oc pl pt_BR ru sl sv uk zh_CN zh_HK zh_TW
+for l in C cs da de el en_GB es eu fi gl hu it oc pl pt_BR ru sl sv uk zh_CN zh_HK zh_TW; do
 	echo "%%dir %%{_datadir}/help/$l"
 	echo "%%lang($l) %%{_datadir}/help/$l/%%{name}"
 done >> %{name}.lang
