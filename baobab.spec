@@ -2,18 +2,19 @@
 
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
-Version:	3.4.1
+Version:	3.6.3
 Release:	1
 License:	GPLv2+
 Group:		File tools
 Url:		http://live.gnome.org/GnomeUtils/Baobab
-Source0:	http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	itstool
-BuildRequires:	intltool
+BuildRequires:	intltool vala-tools
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
 Conflicts:	gnome-utils < 1:3.3.1
 
 %description
@@ -38,17 +39,10 @@ a full graphical tree-map window for each selected folder.
 
 %find_lang %{name} --with-gnome
 
-for l in C ca cs da de el en_GB es eu fi fr gl hu it oc pl pt_BR ru sl sv uk zh_CN zh_HK zh_TW; do
-	echo "%%dir %%{_datadir}/help/$l"
-	echo "%%lang($l) %%{_datadir}/help/$l/%%{name}"
-done >> %{name}.lang
-
 %files -f %{name}.lang
-%doc README NEWS AUTHORS TODO ChangeLog
+%doc README NEWS AUTHORS ChangeLog
 %{_bindir}/baobab
-%{_datadir}/baobab/
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_datadir}/applications/baobab.desktop
-%{_datadir}/icons/hicolor/*/apps/baobab.png
+%{_datadir}/icons/hicolor/*/*/*
 %{_mandir}/man1/baobab.1.*
-
