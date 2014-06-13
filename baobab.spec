@@ -3,7 +3,7 @@
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
 Version:	3.6.4
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		File tools
 Url:		http://live.gnome.org/GnomeUtils/Baobab
