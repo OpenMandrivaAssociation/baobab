@@ -32,7 +32,7 @@ a full graphical tree-map window for each selected folder.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
@@ -48,6 +48,5 @@ a full graphical tree-map window for each selected folder.
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*
-%{_datadir}/icons/HighContrast/*/*/*
 %{_mandir}/man1/baobab.1.*
 
