@@ -7,7 +7,7 @@ Release:	2
 License:	GPLv2+
 Group:		File tools
 Url:		http://live.gnome.org/GnomeUtils/Baobab
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	itstool
 BuildRequires:	intltool
 BuildRequires:	vala-tools
