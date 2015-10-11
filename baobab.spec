@@ -2,8 +2,8 @@
 
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
-Version:	 3.16.1
-Release:	4
+Version:	3.18.1
+Release:	1
 License:	GPLv2+
 Group:		File tools
 Url:		http://live.gnome.org/GnomeUtils/Baobab
@@ -11,6 +11,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{ver
 BuildRequires:	itstool
 BuildRequires:	intltool
 BuildRequires:	vala-tools
+BuildRequires:	yelp-tools
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
