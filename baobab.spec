@@ -2,7 +2,7 @@
 
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
-Version:	3.18.1
+Version:	3.30.0
 Release:	1
 License:	GPLv2+
 Group:		File tools
@@ -17,6 +17,7 @@ BuildRequires:	pkgconfig(glib-2.0) >= 2.30.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(libgtop-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
+BuildRequires:	meson
 Conflicts:	gnome-utils < 1:3.3.1
 
 %description
@@ -33,18 +34,21 @@ a full graphical tree-map window for each selected folder.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
+
+#we don't want these
+find %{buildroot} -name '*.la' -delete
 
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc README NEWS AUTHORS ChangeLog
+%doc README NEWS AUTHORS
 %{_bindir}/baobab
-%{_datadir}/appdata/org.gnome.baobab.appdata.xml
+%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
 %{_datadir}/applications/org.gnome.baobab.desktop
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
