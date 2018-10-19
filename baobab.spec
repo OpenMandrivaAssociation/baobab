@@ -46,9 +46,9 @@ find %{buildroot} -name '*.la' -delete
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc README NEWS AUTHORS ChangeLog
+%doc README NEWS AUTHORS
 %{_bindir}/baobab
-%{_datadir}/appdata/org.gnome.baobab.appdata.xml
+%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
 %{_datadir}/applications/org.gnome.baobab.desktop
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
