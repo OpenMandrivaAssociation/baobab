@@ -1,7 +1,2 @@
-removed_sources:
-  baobab-3.14.1.tar.xz: 15f630c72c455befd8d8b48f706f2228b57aa2b0
-  baobab-3.16.1.tar.xz: 730ae53292f1c050045ffa131dbba53492d1609c
-  baobab-3.6.4.tar.xz: 7e80e31ceaf0601d61abd82d37fb25ce2997174f
-  baobab-3.18.1.tar.xz: e2afc3ab821b13c104451ce0329fed43c037d8d9
 sources:
-  baobab-3.30.0.tar.xz: a4e5c85bc60aab41c93bd430d80e903811eca6a9
+  baobab-3.32.0.tar.xz: d0ce2b523272a553f4ab0ed9ff0060e80ee93e57
