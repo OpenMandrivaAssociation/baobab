@@ -2,7 +2,7 @@
 
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
-Version:	3.37.90
+Version:	3.38.0
 Release:	1
 License:	GPLv2+
 Group:		File tools
