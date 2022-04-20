@@ -2,7 +2,7 @@
 
 Summary:	Disk Usage Analyzer (aka Baobab)
 Name:		baobab
-Version:	41.0
+Version:	42.0
 Release:	1
 License:	GPLv2+
 Group:		File tools
@@ -14,7 +14,8 @@ BuildRequires:	vala-tools
 BuildRequires:	yelp-tools
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.30.0
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0.0
+BuildRequires:	pkgconfig(gtk4)
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libgtop-2.0)
 BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
