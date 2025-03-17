@@ -52,7 +52,7 @@ find %{buildroot} -name '*.la' -delete
 %files -f %{name}.lang
 %doc README.md NEWS AUTHORS
 %{_bindir}/baobab
-%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
+#{_datadir}/metainfo/org.gnome.baobab.appdata.xml
 %{_datadir}/applications/org.gnome.baobab.desktop
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
